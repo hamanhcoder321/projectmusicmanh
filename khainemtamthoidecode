@@ -1,0 +1,91 @@
+//   render: function() {
+//         const htmls = this.manhs.map(manh => {
+//             return `
+//             <div class="manh">
+//                 <div class="thumb" 
+//                     style="background-image: url('${manh.image}');"></div>
+//                 <div class="body">
+//                     <h3 class="title">${manh.name}</h3>
+//                     <p class="author">${manh.singer}</p>
+//                 </div>
+//                 <div class="option">
+//                     <i class="fas fa-ellipsis-h"></i>
+//                 </div>
+//             </div>
+//             `
+//         })
+//         $('.playlist').innerHTML = htmls.join('')
+//     },
+//     defineProperties: function(){
+//         Object.defineProperty(this, 'currentManh',{
+//             get: function(){
+//                 return this.manhs[this.currentIndex];
+//             }
+//         })
+//     },
+//     handleEvents: function(){
+//         const cd = $('.cd')
+//         const cdWidth = cd.offsetWidth
+
+//         document.onscroll = function(){
+//             const scrollTop = window.scrollY || document.documentElement.scrollTop
+//             const newCdWidth = cdWidth - scrollTop
+
+//             cd.style.width = newCdWidth > 0 ? newCdWidth + 'px' : 0
+//             cd.style.opacity = newCdWidth / cdWidth
+//         }
+//     },
+//     loadCurrentManh: function(){
+//         const heading = $('header h2')
+//         const cdThumb = $('.cd-Thumd')
+//         const audio = $('#audio')
+//         heading.textContent = this.currentManh.name
+//         cdThumb.style.backgroundImage = `url('${this.currentManh.image}')`
+//         audio.src = this.currentManh.path
+//         console.log(heading, cdThumb, audio)
+//     },
+//     start: function () {
+//         // Định nghĩa các thuộc tính cho object
+//         this.defineProperties()
+//         // Lắng nghe / xử lý các sự kiện (DOM events)
+//         this.handleEvents()
+//         // Tải thông tin bài hát đầu tiên vào UI khi chạy ứng dụng
+//         this.loadCurrentManh()
+//         // Render playlist
+//         this.render()
+//     }
+// }
+
+// app.start();
+
+
+// <div class="song">
+// <div class="thumb" style="background-image: url('./assets/img/song9.jpg')"></div>
+// <div class="body">
+//     <h3 class="title">3 1 0 7</h3>
+//     <p class="author">Ca sĩ / nhóm nhạc</p>
+// </div>
+// <div class="option">
+//     <i class="fas fa-ellipsis-h"></i>
+// </div>
+// </div>
+// <div class="song">
+// <div class="thumb" style="background-image: url('./assets/img/song9.jpg')"></div>
+// <div class="body">
+//     <h3 class="title">3 1 0 7</h3>
+//     <p class="author">Ca sĩ / nhóm nhạc</p>
+// </div>
+// <div class="option">
+//     <i class="fas fa-ellipsis-h"></i>
+// </div>
+// </div>
+// <div class="song">
+// <div class="thumb" style="background-image: url('./assets/img/song9.jpg')"></div>
+// <div class="body">
+//     <h3 class="title">3 1 0 7 - 3</h3>
+//     <p class="author">Ca sĩ / nhóm nhạc</p>
+// </div>
+// <div class="option">
+//     <i class="fas fa-ellipsis-h"></i>
+// </div>
+// </div>
