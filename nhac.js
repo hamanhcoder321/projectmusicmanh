@@ -23,13 +23,13 @@ const app = {
         {
             name: '3 1 0 7',
             singer: 'W/n',
-            path: '/assets/music/manhs/3107LofiVersion-WnNauDuongg-6943942.mp3',
+            path: 'assets/music/manhs/3107LofiVersion-WnNauDuongg-6943942.mp3',
             image: './assets/img/download.jpg'
         },
         {
             name: '3 1 0 7 - 2',
             singer: 'W/n',
-            path: '/assets/music/manhs/31072Lofi-LittleLOVE-7710136.mp3',
+            path: 'assets/music/manhs/31072Lofi-LittleLOVE-7710136.mp3',
             image: './assets/img/ab67616d0000b2732cdddff8045e2c384093cef1.jpg'
         },
         {
@@ -53,7 +53,7 @@ const app = {
         {
             name: '24H',
             singer: 'LyLy',
-            path: '/assets/music/manhs/24H-LylyMagazine-5766707.mp3',
+            path: 'assets/music/manhs/24H-LylyMagazine-5766707.mp3',
             image: './assets/img/439f8b9d834adfe6b2b3cfa01bdb5355.jpg'
         }
         // Thêm các bài hát khác tương tự như trên
